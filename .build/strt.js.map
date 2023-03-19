@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../strt.ts"],
+  "sourcesContent": ["let startTime: number;\nexport function st() {\n    startTime = performance.now();\n}\n\nexport function up(): number {\n    const i: number = Math.floor((performance.now() - startTime) / 1000);\n    let s: any = (i % 60).toString().padStart(2, '0')\n    let m: any = (Math.floor(i / 60) % 60).toString().padStart(2, '0')\n    let h: any = (Math.floor(Math.floor(i / 60) / 60)).toString().padStart(2, '0')\n    let upt = { h: h, m: m, s: s, strt: '*' } as any;\n    return upt;\n}\nexport default up\n\nexport const sleep = (t: number | undefined) => new Promise((resolve) => setTimeout(resolve, t));\n\nexport type Upt = {\n    s? : string;\n    m? : string;\n    h? : string;\n    strt? : string;\n}\n\nexport type T = {\n    chatId? : number | undefined;\n    sleep ? :( (num: number) => void ) | undefined;\n    Upt? : Upt;\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IAAI;AACG,SAAS,KAAK;AACjB,cAAY,YAAY,IAAI;AAChC;AAEO,SAAS,KAAa;AACzB,QAAM,IAAY,KAAK,OAAO,YAAY,IAAI,IAAI,aAAa,GAAI;AACnE,MAAI,KAAU,IAAI,IAAI,SAAS,EAAE,SAAS,GAAG,GAAG;AAChD,MAAI,KAAU,KAAK,MAAM,IAAI,EAAE,IAAI,IAAI,SAAS,EAAE,SAAS,GAAG,GAAG;AACjE,MAAI,IAAU,KAAK,MAAM,KAAK,MAAM,IAAI,EAAE,IAAI,EAAE,EAAG,SAAS,EAAE,SAAS,GAAG,GAAG;AAC7E,MAAI,MAAM,EAAE,GAAM,GAAM,GAAM,MAAM,IAAI;AACxC,SAAO;AACX;AACA,IAAO,eAAQ;AAER,MAAM,QAAQ,CAAC,MAA0B,IAAI,QAAQ,CAAC,YAAY,WAAW,SAAS,CAAC,CAAC;",
+  "names": []
+}

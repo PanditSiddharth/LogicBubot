@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../keep_alive.ts"],
+  "sourcesContent": ["const express = require('express');\nconst keep_alive = () =>{\nconst app = express();\nconst port = 3000;\napp.get('/', (req: any, res: any)=>{\n   res.status(200).send(\"bot running..\")\n//    res.sendStatus(200)\n})\napp.listen(port, () => console.log(`Bot running on http://localhost:${port}`));\n}\nexport default keep_alive"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAAM,UAAU,QAAQ,SAAS;AACjC,MAAM,aAAa,MAAK;AACxB,QAAM,MAAM,QAAQ;AACpB,QAAM,OAAO;AACb,MAAI,IAAI,KAAK,CAAC,KAAU,QAAW;AAChC,QAAI,OAAO,GAAG,EAAE,KAAK,eAAe;AAAA,EAEvC,CAAC;AACD,MAAI,OAAO,MAAM,MAAM,QAAQ,IAAI,mCAAmC,MAAM,CAAC;AAC7E;AACA,IAAO,qBAAQ;",
+  "names": []
+}

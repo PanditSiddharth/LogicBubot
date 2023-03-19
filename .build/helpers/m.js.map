@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../helpers/m.ts"],
+  "sourcesContent": ["import Con from './con'\nlet y = new Con();\nlet t = async () => {\n    for (let i = 0; i < 2; i++) {\n        await y.del({ ob: { \"name\": 'sid' } })\n    }\n    let c = null\n    while(!c)\n    c = y.close()\n    console.log('closing')\n    // c = y.close()\n}\nt()"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA,iBAAgB;AAChB,IAAI,IAAI,IAAI,WAAAA,QAAI;AAChB,IAAI,IAAI,YAAY;AAChB,WAAS,IAAI,GAAG,IAAI,GAAG,KAAK;AACxB,UAAM,EAAE,IAAI,EAAE,IAAI,EAAE,QAAQ,MAAM,EAAE,CAAC;AAAA,EACzC;AACA,MAAI,IAAI;AACR,SAAM,CAAC;AACP,QAAI,EAAE,MAAM;AACZ,UAAQ,IAAI,SAAS;AAEzB;AACA,EAAE;",
+  "names": ["Con"]
+}
