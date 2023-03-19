@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../helpers.ts"],
+  "sourcesContent": ["export type Upt = {\n    s? : string;\n    m? : string;\n    h? : string;\n    strt? : string;\n}\n\nexport type T = {\n    chatId? : number | undefined;\n    sleep ? :( (num: number) => void ) | undefined;\n    Upt? : Upt;\n}\n\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}

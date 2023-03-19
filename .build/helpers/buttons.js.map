@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../helpers/buttons.ts"],
+  "sourcesContent": ["import {TelegramClient} from \"telegram\";\nconst { Button } = require(\"telegram/tl/custom/button\");\nimport { NewMessageEvent } from \"telegram/events\";\nimport { Upt } from \"../helpers\";\n // PS this function is not async\n\n const seth = async (client: TelegramClient, e: NewMessageEvent, upt: Upt) => {\nconst markup = client.buildReplyMarkup(Button.inline(\"Hello!\"));\nconst m = e.message\nconst chatId = m.chatId as import(\"big-integer\").BigInteger\nawait client.sendMessage(chatId, {\n    message: \"click me!\",\n    buttons: markup,\n})\n }"],
+  "mappings": ";AACA,MAAM,EAAE,OAAO,IAAI,QAAQ,2BAA2B;AAKrD,MAAM,OAAO,OAAO,QAAwB,GAAoB,QAAa;AAC9E,QAAM,SAAS,OAAO,iBAAiB,OAAO,OAAO,QAAQ,CAAC;AAC9D,QAAM,IAAI,EAAE;AACZ,QAAM,SAAS,EAAE;AACjB,QAAM,OAAO,YAAY,QAAQ;AAAA,IAC7B,SAAS;AAAA,IACT,SAAS;AAAA,EACb,CAAC;AACA;",
+  "names": []
+}

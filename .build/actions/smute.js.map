@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../actions/smute.ts"],
+  "sourcesContent": ["import { TelegramClient } from \"telegram\"\nimport { NewMessageEvent } from \"telegram/events\"\nimport { sleep } from \"../strt\"\nimport { Upt } from \"../helpers\"\n\nconst smute = async (client: TelegramClient, e: NewMessageEvent, upt: Upt) => {\n    try {\n\n        const m = e.message\n        const chatId = m.chatId as import(\"big-integer\").BigInteger\n        var message = await client.sendMessage(chatId, { message: \"smute command running.....\" });\n\n    } catch (error: any) {\n        console.log(\"smute: \" + error.message)\n    }\n}\n\nexport default smute"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAKA,MAAM,QAAQ,OAAO,QAAwB,GAAoB,QAAa;AAC1E,MAAI;AAEA,UAAM,IAAI,EAAE;AACZ,UAAM,SAAS,EAAE;AACjB,QAAI,UAAU,MAAM,OAAO,YAAY,QAAQ,EAAE,SAAS,6BAA6B,CAAC;AAAA,EAE5F,SAAS,OAAP;AACE,YAAQ,IAAI,YAAY,MAAM,OAAO;AAAA,EACzC;AACJ;AAEA,IAAO,gBAAQ;",
+  "names": []
+}

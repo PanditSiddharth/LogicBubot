@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../helpers/logger.ts"],
+  "sourcesContent": ["import { createLogger, format, transports } from 'winston';\n\nconst logger = createLogger({\n    level: 'info',\n    format: format.combine(\n        format.timestamp(),\n        format.printf((info) => {\n            return `${info.timestamp} ${info.level}: ${info.message}`;\n        })\n    ),\n    transports: [\n        new transports.Console(),\n        new transports.File({ filename: 'info.log' })\n    ]\n});\n\nexport { logger };\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,qBAAiD;AAEjD,MAAM,aAAS,6BAAa;AAAA,EACxB,OAAO;AAAA,EACP,QAAQ,sBAAO;AAAA,IACX,sBAAO,UAAU;AAAA,IACjB,sBAAO,OAAO,CAAC,SAAS;AACpB,aAAO,GAAG,KAAK,aAAa,KAAK,UAAU,KAAK;AAAA,IACpD,CAAC;AAAA,EACL;AAAA,EACA,YAAY;AAAA,IACR,IAAI,0BAAW,QAAQ;AAAA,IACvB,IAAI,0BAAW,KAAK,EAAE,UAAU,WAAW,CAAC;AAAA,EAChD;AACJ,CAAC;",
+  "names": []
+}

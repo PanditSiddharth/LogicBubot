@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../actions/y.ts"],
+  "sourcesContent": ["// const ytdl = require(\"ytdl-core\");\n// (async ()=>{\n//  const info = await ytdl.getInfo('https://www.youtube.com/watch?v=Jm_wpjfYUhg')\n// })()\n\nconst https = require('https');\nconst fs = require('fs');\n\nconst videoUrl = 'https://www.youtube.com/watch?v=QGJuMBdaqIw';\n\nhttps.get(videoUrl, (res: any) => {\n  res.on('data', (data: any) => {\n    fs.appendFileSync('video.mp4', data);\n  });\n  res.on('end', () => {\n    console.log('Video downloaded successfully!');\n  });\n});\n\n\n\n\n\n\n\n\n\n"],
+  "mappings": ";AAKA,MAAM,QAAQ,QAAQ,OAAO;AAC7B,MAAM,KAAK,QAAQ,IAAI;AAEvB,MAAM,WAAW;AAEjB,MAAM,IAAI,UAAU,CAAC,QAAa;AAChC,MAAI,GAAG,QAAQ,CAAC,SAAc;AAC5B,OAAG,eAAe,aAAa,IAAI;AAAA,EACrC,CAAC;AACD,MAAI,GAAG,OAAO,MAAM;AAClB,YAAQ,IAAI,gCAAgC;AAAA,EAC9C,CAAC;AACH,CAAC;",
+  "names": []
+}
