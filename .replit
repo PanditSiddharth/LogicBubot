@@ -1,4 +1,4 @@
-compile = "./.config/build.sh"
+#compile = "./.config/build.sh"
 run = "./node_modules/.bin/ts-node index.ts"
 entrypoint = "index.ts"
 hidden = [".build", ".config"]

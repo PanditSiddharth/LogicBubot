@@ -59,8 +59,8 @@ const start = async (client: TelegramClient, bot: any) => {
             else if(m.isPrivate && aa) {
                 aa = false;
                 sleep(3000).then(() => aa = true)
-                y.edit("Sleeping 3seconds here for your id security(use it in group/channels)")
-                await actions(client, e, upt, bot)
+              //  y.edit("Sleeping 3seconds here for your id security(use it in group/channels)")
+               await actions(client, e, upt, bot)
             }
 
         };

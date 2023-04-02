@@ -10,10 +10,10 @@ import { st } from './strt';
 dotenv.config();
 const { Telegraf } = require('telegraf');
 
-const bot = new Telegraf("5918588428:AAEKZjk5LSBTrRo-XSowkpxbp1ajZ7fKfmI");
-const season = process.env.SEASON
+const bot = new Telegraf(process.env.TOKEN);
+const season = process.env.SESSION
 const stringSession = new StringSession(season);
-const client = new TelegramClient(stringSession, 22199045, '39263ccc0fa63f4076e3b6948206ca7f', { connectionRetries: 5 });
+const client = new TelegramClient(stringSession, parseInt(process.env.APIID as any),(process.env.APIHASH as string), { connectionRetries: 1 });
 keep_alive();
 
 //                                         Client
@@ -21,8 +21,18 @@ keep_alive();
 
 (async () => {
   st()
-  await client.start({ botAuthToken: "" });
+  await client.start({
+
+    phoneNumber: async () => await input.text("Please enter your number: "),
+    password: async () => await input.text("Please enter your password: "),
+    phoneCode: async () =>
+      await input.text("Please enter the code you received: "),
+    onError: (err) => console.log(err)
+  });
   console.log("You should now be connected.");
+
+
+  await client.sendMessage("me", { message: (client.session.save() as any) })
 
   await start(client, bot)
   try {
