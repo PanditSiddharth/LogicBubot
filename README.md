@@ -17,10 +17,10 @@ https://github.com/sidhelpbot/LogicBubot
 <!-- [![Repl.it deployment](https://repl.it/badge/github/sidhelpbot/logicb-userbot)](https://repl.it/github/sidhelpbot/logicb-userbot) -->
 
 6: Fill these secrets their in secrets
-APIID \n
-APIHASH \n
-SESSION
-TOKEN
+`APIID  
+APIHASH  
+SESSION  
+TOKEN  `
 
 for APIID and APIHASH 
 go to my.telegram.org
