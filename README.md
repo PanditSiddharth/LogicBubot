@@ -2,7 +2,7 @@
 
 ## Deploy from Replit 
 #### Steps
-1: first `**create replit account**` if you have not already
+1: first **`create replit account`** if you have not already
 
 2: **`create a repl`** there means one project
 
