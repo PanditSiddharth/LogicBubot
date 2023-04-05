@@ -2,11 +2,11 @@
 
 ## Deploy from Replit 
 #### Steps
-1: first **create replit account** if you have not already
+1: first `create replit account` if you have not already
 
-2: **create a repl** there means one project
+2: **`create a repl`** there means one project
 
-3: In you project or repl you will see some files which is already exists **delete those all files first** and also firstly **delete that hidden files** also
+3: In you project or repl you will see some files which is already exists **`delete those all files first`** and also firstly **`delete that hidden files`** also
 
 4: Now in tools for laptop in replit or if you are using mobile then tap on 4 box button at bottom at create new tab you will see many options there
  select git and **connect your github account** if you not connected.
