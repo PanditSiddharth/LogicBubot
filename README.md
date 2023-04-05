@@ -36,6 +36,12 @@ After filling all secrets simply run repl
 ## Now your userbot is ready!!  
 ### In telegram use `*ping` command to see it is running or not
 
+but it will stop after some time so for keeping it alive you need to do one more step:  
+
+7: Goto this https://uptimerobot.com/website-monitoring/ sign up their and then again click this link and their create new monitor paste your replit's projecs website which is running their in monitor after selecting http request for moniter  
+
+and try 2 times it will create moniter free now all set!!
+
 ## For more info:  
 TG Channel: https://telegram.me/logicBots  
 TG Group: https://telegram.me/logicB_support
