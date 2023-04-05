@@ -17,8 +17,8 @@ https://github.com/sidhelpbot/LogicBubot
 <!-- [![Repl.it deployment](https://repl.it/badge/github/sidhelpbot/logicb-userbot)](https://repl.it/github/sidhelpbot/logicb-userbot) -->
 
 6: Fill these secrets their in secrets
-APIID
-APIHASH
+APIID \n
+APIHASH \n
 SESSION
 TOKEN
 
