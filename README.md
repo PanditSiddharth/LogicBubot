@@ -33,7 +33,8 @@ https://telegram.me/botfather
 
 After filling all secrets simply run repl 
 
-## Now your userbot is ready in telegram use `*ping` command to see it is running or not
+## Now your userbot is ready!!  
+### In telegram use `*ping` command to see it is running or not
 
 ## For more info:  
 TG Channel: https://telegram.me/logicBots  
