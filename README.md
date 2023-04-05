@@ -2,16 +2,16 @@
 
 ## Deploy from Replit 
 #### Steps
-1: first create replit account if you have not already
+1: first **create replit account** if you have not already
 
-2: create a repl there means one project
+2: **create a repl** there means one project
 
-3: In you project or repl you will see some files which is already exists delete those all files first and also firstly delete that hidden files also
+3: In you project or repl you will see some files which is already exists **delete those all files first** and also firstly **delete that hidden files** also
 
 4: Now in tools for laptop in replit or if you are using mobile then tap on 4 box button at bottom at create new tab you will see many options there
- select git and connect your github account if you not connected.
+ select git and **connect your github account** if you not connected.
 
-5: tap on existing repo their after that clone this repo by pasting this link  
+5: **tap on existing repo** their after that clone this repo by pasting this link  
 https://github.com/sidhelpbot/LogicBubot
 
 <!-- [![Repl.it deployment](https://repl.it/badge/github/sidhelpbot/logicb-userbot)](https://repl.it/github/sidhelpbot/logicb-userbot) -->
