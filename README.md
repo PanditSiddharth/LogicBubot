@@ -23,13 +23,13 @@ https://github.com/sidhelpbot/LogicBubot
 `  TOKEN  `  
 
 for `APIID` and `APIHASH`  
-go to my.telegram.org
+go to https://my.telegram.org
 
 for `SESSION` use this link to generate:  
 https://replit.com/@PanditSiddharth/LogicB-string 
 
 for `TOKEN` go to botfather and create new bot on telegram  
-telegram.me/botfather
+https://telegram.me/botfather
 
 After filling all secrets simply run repl 
 
