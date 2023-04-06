@@ -13,9 +13,9 @@ const child = spawn('./node_modules/.bin/pm2 list | grep -c "online"', {
 child.stdout.on("data", (out) => {
   out = out.toString();
   console.log(out)
-  
+
   if (out == 1)
-    console.log("Userbot already running..")
+    console.log("Userbot already running.. try *ping command")
   else if (out == 0) {
     exec('./node_modules/.bin/pm2 start index.ts --instances 1 --interpreter ./node_modules/.bin/ts-node', (error, stdout, std) => {
       if (error)
@@ -23,6 +23,7 @@ child.stdout.on("data", (out) => {
       if (stdout)
         return console.log(std)
       console.log(stdout)
+      console.log("Userbot started try *ping command..")
     })
   }
 
@@ -33,6 +34,7 @@ child.stdout.on("data", (out) => {
       if (stdout)
         return console.log(std)
       console.log(stdout)
+      console.log("Userbot started try *ping command..")
     })
   }
 
