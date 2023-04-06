@@ -19,7 +19,7 @@ let update = async (bot: any, client: any, e: any) => {
           return y.edit("unable to import git try one time more");
         else {
           await sleep(5000)
-          await y.edit('Imported new updates Successfully\n\nNow restarting server after 20 seconds try *ping command', { id: idd.id });
+          await y.edit('Imported new updates Successfully\n\nNow restarting server after 20 seconds try *ping command or check saved message after some seconds', { id: idd.id });
 
           exec('./node_modules/.bin/pm2 restart 0', async (r: any, ut: any, st: any) => {
             if (r)
@@ -38,7 +38,7 @@ let update = async (bot: any, client: any, e: any) => {
       })
 
     }
-    y.edit('Imported new updates Successfully\n\nNow restarting try *ping command after 15 seconds.', { d: false, id: idd.id });
+    y.edit('Imported new updates Successfully\n\nNow restarting try *ping command after 15 seconds or check saved message after some seconds.', { d: false, id: idd.id });
     // await client.destroy();
     // await sleep(60000)
 
