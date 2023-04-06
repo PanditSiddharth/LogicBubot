@@ -3,10 +3,10 @@ const puppeteer = require('puppeteer-core');
 import axios from "axios"
 const jju = require('jju');
 let {sleep} = require("./strt")
-// let server: any
-const keep_alive = async () =>{
-const app = express();
 const port = 3000;
+// let server: any
+const app = express();
+const keep_alive = async () =>{
 (async ()=> {
   
 })();
