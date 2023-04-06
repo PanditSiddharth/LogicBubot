@@ -3,7 +3,7 @@ const { exec } = require('child_process');
 import Chk from "./helpers/chk"
 import {closeServer} from "./keep_alive"
 
-let update = (bot: any, client: any, e: any) => {
+let update = async (bot: any, client: any, e: any) => {
 let y: any = new Chk(client, e)
   
     y.edit('Updating GitHub repository...');
@@ -16,7 +16,7 @@ let y: any = new Chk(client, e)
         y.edit(`STDError updating GitHub repository: ${stderr} \nPlease try one time more`);
         return;
       }
-      y.edit('GitHub repository updated successfully! yo yo');
+      y.edit('Imported new updated SuccessfullY: Now restarting server please wait...');
       // await client.destroy();
       // await sleep(60000)
       
@@ -36,7 +36,7 @@ let y: any = new Chk(client, e)
           y.edit(`Error restarting Replit instance: ${stderr}`);
           return;
         }
-        y.edit('Replit instance restarted successfully! yo yo');
+        y.edit('Successfully updated: Restarted bot');
       });
     });
 }
