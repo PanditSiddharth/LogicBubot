@@ -16,7 +16,7 @@ const ping = async (client: TelegramClient, e: any, upt:any ) =>{
         //   }
         // }
         // yo()
-
+        y.edit("yo")
 await y.edit(`
   .╭╮╱╱╱╱╱╱╱╱╭━━╮
   ┃┃╱╱╱╱╱╱╱╱┃╭╮┃
@@ -31,6 +31,7 @@ await y.edit(`
   💓 𝗨𝗽𝘁𝗶𝗺𝗲 👉 ${upt.h + ' : ' + upt.m + ' : ' + upt.s}
   ━━━━━━━━━━━━━━━━━━━━━━
   `)
+     
 
       } catch (err) { console.log(err) }
     
