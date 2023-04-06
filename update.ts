@@ -6,7 +6,7 @@ import {closeServer} from "./keep_alive"
 let update = async (bot: any, client: any, e: any) => {
 let y: any = new Chk(client, e)
   
-    y.edit('Updating GitHub repository...');
+    y.edit('Importing GitHub repository...');
     exec("cd ./ && git fetch --all && git reset --hard origin/main", async (error: any, stdout: any, stderr: any) => {
       if (error) {
         y.edit(`Error GitHub repository: ${error.message} \nPlease try one time more`);
@@ -16,7 +16,7 @@ let y: any = new Chk(client, e)
         y.edit(`STDError updating GitHub repository: ${stderr} \nPlease try one time more`);
         return;
       }
-      y.edit('Imported new updated SuccessfullY: Now restarting server please wait...');
+      y.edit('Imported new updates Successfully\nNow restarting server please wait...');
       // await client.destroy();
       // await sleep(60000)
       
