@@ -1,5 +1,6 @@
 #compile = "./.config/build.sh"
 run = "./node_modules/.bin/ts-node index.ts"
+# run = "./node_modules/.bin/nodemon index.ts"
 entrypoint = "index.ts"
 hidden = [".build", ".config"]
 

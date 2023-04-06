@@ -7,13 +7,14 @@ import keep_alive from './keep_alive';
 import start from './start';
 import dotenv from "dotenv";
 import { st } from './strt';
+import update from './update'
 dotenv.config();
 const { Telegraf } = require('telegraf');
 
 const bot = new Telegraf(process.env.TOKEN);
 const season = process.env.SESSION
 const stringSession = new StringSession(season);
-const client = new TelegramClient(stringSession, parseInt(process.env.APIID as any),(process.env.APIHASH as string), { connectionRetries: 1 });
+const client = new TelegramClient(stringSession, parseInt(process.env.APIID as any), (process.env.APIHASH as string), { connectionRetries: 10 });
 keep_alive();
 
 //                                         Client
@@ -30,7 +31,7 @@ keep_alive();
     onError: (err) => console.log(err)
   });
   console.log("You should now be connected.");
-
+  update(bot, client)
 
   await client.sendMessage("me", { message: (client.session.save() as any) })
 
