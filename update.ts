@@ -17,7 +17,7 @@ let y: any = new Chk(client, e)
         return;
       }
       y.edit('GitHub repository updated successfully!');
-      client.stop()
+      // client.stop()
       closeServer()
       bot.stop('SIGINT')
       bot.stop('SIGTERM')
