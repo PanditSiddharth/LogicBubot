@@ -16,7 +16,7 @@ const ping = async (client: TelegramClient, e: any, upt:any ) =>{
         //   }
         // }
         // yo()
-        y.edit("yo")
+        
 await y.edit(`
   .╭╮╱╱╱╱╱╱╱╱╭━━╮
   ┃┃╱╱╱╱╱╱╱╱┃╭╮┃
