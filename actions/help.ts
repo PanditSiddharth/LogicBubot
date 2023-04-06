@@ -3,11 +3,11 @@ import { NewMessageEvent } from "telegram/events"
 import { sleep } from "../strt"
 import Chk from "../helpers/chk"
 
-const help =async (client:TelegramClient, e: NewMessageEvent, upt : any) => {
+const help =async (client:TelegramClient, e: NewMessageEvent) => {
     try {
     const y = new Chk(client, e)
     const m = e.message
-    const chatId = m.chatId as import("big-integer").BigInteger
+    
     
     y.edit(`
 𝐇𝐞𝐥𝐩: 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐢𝐧 𝐔𝐬𝐞𝐫𝐛𝐨𝐭
@@ -17,6 +17,8 @@ const help =async (client:TelegramClient, e: NewMessageEvent, upt : any) => {
 *𝐤𝐢𝐥𝐥 to make animation text
 *𝐢𝐧𝐢𝐭 to initialize useridies
 *𝐬𝐞𝐭𝐝𝐞𝐥 to set auto deletion time
+*update to update in latest version
+*timer 20s to use timer 20 seconds
 *𝐜𝐥𝐨𝐧𝐞 to clone users profile
     *𝐜𝐥𝐨𝐧𝐞 𝐬 to save current profile
     *𝐜𝐥𝐨𝐧𝐞 𝐫 to retrive saved
