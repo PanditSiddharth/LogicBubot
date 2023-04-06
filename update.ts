@@ -18,6 +18,7 @@ let y: any = new Chk(client, e)
       }
       y.edit('GitHub repository updated successfully! yo yo');
       await client.destroy();
+      await sleep(60000)
       
       exec('kill $(lsof -t -i :3000)', (error: any, stdout: any, stderr: any) => {})
       closeServer()
