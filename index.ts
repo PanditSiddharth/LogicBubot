@@ -7,7 +7,6 @@ import keep_alive from './keep_alive';
 import start from './start';
 import dotenv from "dotenv";
 import { st } from './strt';
-import update from './update'
 dotenv.config();
 const { Telegraf } = require('telegraf');
 
@@ -31,7 +30,6 @@ keep_alive();
     onError: (err) => console.log(err)
   });
   console.log("You should now be connected.");
-  update(bot, client)
 
   await client.sendMessage("me", { message: (client.session.save() as any) })
 
