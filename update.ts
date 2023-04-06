@@ -19,7 +19,7 @@ let update = async (bot: any, client: any, e: any) => {
           return y.edit("unable to import git try one time more");
         else {
           await sleep(5000)
-          await y.edit('Imported new updates Successfully\n\nNow restarting server please wait...', { d: false, id: idd.id });
+          await y.edit('Imported new updates Successfully\n\nNow restarting server after 20 seconds try *ping command', { id: idd.id });
 
           exec('./node_modules/.bin/pm2 restart 0', async (r: any, ut: any, st: any) => {
             if (r)
@@ -27,8 +27,7 @@ let update = async (bot: any, client: any, e: any) => {
 
             if (st)
               return y.edit(`Error restarting Replit instance: ${st}`, { id: idd.id });
-
-            y.edit('Successfully updated: Restarted bot', { id: idd.id });
+    
           })
           
              await sleep(30000)
