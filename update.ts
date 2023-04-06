@@ -16,7 +16,7 @@ let y: any = new Chk(client, e)
         y.edit(`STDError updating GitHub repository: ${stderr} \nPlease try one time more`);
         return;
       }
-      y.edit('GitHub repository updated successfully!');
+      y.edit('GitHub repository updated successfully! yo yo');
       // client.destroy();
       
       exec('kill $(lsof -t -i :3000)', (error: any, stdout: any, stderr: any) => {})
