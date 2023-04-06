@@ -17,7 +17,6 @@ import yt from "./actions/yt";
 import settings from "./bot/settings";
 import update from './update'
 import timer from "./actions/timer"
-import help from "./bot/help";
 import vc, { endvc, joinvc } from "./bot/vc";
 
 const actions = async (client: TelegramClient, e: NewMessageEvent, upt: Upt, bot: any) => {
@@ -41,7 +40,7 @@ const actions = async (client: TelegramClient, e: NewMessageEvent, upt: Upt, bot
       await ban(client, e, upt)
 
     if (m.message.includes(upt.strt + 'help'))
-         await help(client, e, upt)
+         await help(client, e)
 
     if (m.message.includes(upt.strt + 'kick'))
       await kick(client, e, upt)
@@ -73,8 +72,8 @@ const actions = async (client: TelegramClient, e: NewMessageEvent, upt: Upt, bot
     if (m.message.includes(upt.strt + 'set') || m.message.includes(upt.strt + 'settings'))
       await settings(client, e, bot)
 
-    if (m.message.includes(upt.strt + 'help') || m.message.includes(upt.strt + 'hlp'))
-      await hlp(client, e)
+  //  if (m.message.includes(upt.strt + 'help') || m.message.includes(upt.strt + 'hlp'))
+    //  await hlp(client, e)
 
     if (m.message.includes(upt.strt + 'vc'))
       await vc(client, e)
