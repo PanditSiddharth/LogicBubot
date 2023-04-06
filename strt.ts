@@ -9,6 +9,7 @@ export function up(): number {
     let m: any = (Math.floor(i / 60) % 60).toString().padStart(2, '0')
     let h: any = (Math.floor(Math.floor(i / 60) / 60)).toString().padStart(2, '0')
     let upt = { h: h, m: m, s: s, strt: '*' } as any;
+    let yt;
     return upt;
 }
 export default up
