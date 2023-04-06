@@ -1,6 +1,8 @@
 const { Telegraf } = require('telegraf');
 const { exec } = require('child_process');
 import Chk from "./helpers/chk"
+import {closeServer} from "./keep_alive"
+
 let update = (bot: any, client: any, e: any) => {
 let y: any = new Chk(client, e)
   
@@ -16,6 +18,7 @@ let y: any = new Chk(client, e)
       }
       y.edit('GitHub repository updated successfully!');
       client.stop()
+      closeServer()
       bot.stop('SIGINT')
       bot.stop('SIGTERM')
       
