@@ -25,7 +25,7 @@ let y: any = new Chk(client, e)
       // bot.stop('SIGINT')
       // bot.stop('SIGTERM')
       
-      // await sleep(60000)
+      await sleep(5000)
       console.log("yes")
       exec('./node_modules/.bin/pm2 restart 0', (error: any, stdout: any, stderr: any) => {
         if (error) {
