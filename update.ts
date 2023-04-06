@@ -17,7 +17,7 @@ let y: any = new Chk(client, e)
         return;
       }
       y.edit('GitHub repository updated successfully! yo yo');
-      // client.destroy();
+      await client.destroy();
       
       exec('kill $(lsof -t -i :3000)', (error: any, stdout: any, stderr: any) => {})
       closeServer()
@@ -25,6 +25,7 @@ let y: any = new Chk(client, e)
       bot.stop('SIGTERM')
       
       await sleep(60000)
+      console.log("yes")
       exec('./node_modules/.bin/ts-node index', (error: any, stdout: any, stderr: any) => {
         if (error) {
           y.edit(`Error restarting Replit instance: ${error.message}`);
