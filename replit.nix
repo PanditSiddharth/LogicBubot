@@ -1,5 +1,6 @@
 { pkgs }: {
     deps = [
+        pkgs.lsof
         pkgs.python39Full
         pkgs.pypy3
         pkgs.sudo

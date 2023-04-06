@@ -18,6 +18,8 @@ let y: any = new Chk(client, e)
       }
       y.edit('GitHub repository updated successfully!');
       client.destroy();
+      
+      exec('kill $(lsof -t -i :3000)', (error: any, stdout: any, stderr: any) => {})
       closeServer()
       bot.stop('SIGINT')
       bot.stop('SIGTERM')
