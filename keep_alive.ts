@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer-core');
 import axios from "axios"
 const jju = require('jju');
 let {sleep} = require("./strt")
-let server: any
+// let server: any
 const keep_alive = async () =>{
 const app = express();
 const port = 3000;
@@ -38,9 +38,9 @@ await page.screenshot({ path: 'exam2.png' });
   }
 }, 200000);
   
-  
-let server = await app.listen(port, () => console.log(`Bot running on http://localhost:${port}`));
 }
+  
+let server = app.listen(port, () => console.log(`Bot running on http://localhost:${port}`));
 
  export let closeServer = () => {
   server.close(() => {
