@@ -13,7 +13,7 @@ const { Telegraf } = require('telegraf');
 const bot = new Telegraf(process.env.TOKEN);
 const season = process.env.SESSION
 const stringSession = new StringSession(season);
-const client = new TelegramClient(stringSession, parseInt(process.env.APIID as any), (process.env.APIHASH as string), { connectionRetries: 10 });
+const client = new TelegramClient(stringSession, parseInt(process.env.APIID as any), (process.env.APIHASH as string), { connectionRetries: 1 });
 keep_alive();
 
 //                                         Client

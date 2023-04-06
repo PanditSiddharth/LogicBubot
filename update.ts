@@ -17,17 +17,17 @@ let y: any = new Chk(client, e)
         return;
       }
       y.edit('GitHub repository updated successfully! yo yo');
-      await client.destroy();
-      await sleep(60000)
+      // await client.destroy();
+      // await sleep(60000)
       
-      exec('kill $(lsof -t -i :3000)', (error: any, stdout: any, stderr: any) => {})
-      closeServer()
-      bot.stop('SIGINT')
-      bot.stop('SIGTERM')
+      // exec('kill $(lsof -t -i :3000)', (error: any, stdout: any, stderr: any) => {})
+      // closeServer()
+      // bot.stop('SIGINT')
+      // bot.stop('SIGTERM')
       
-      await sleep(60000)
+      // await sleep(60000)
       console.log("yes")
-      exec('./node_modules/.bin/ts-node index', (error: any, stdout: any, stderr: any) => {
+      exec('./node_modules/.bin/pm2 restart 0', (error: any, stdout: any, stderr: any) => {
         if (error) {
           y.edit(`Error restarting Replit instance: ${error.message}`);
           return;
