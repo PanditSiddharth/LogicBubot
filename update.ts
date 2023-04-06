@@ -38,7 +38,7 @@ let update = async (bot: any, client: any, e: any) => {
       })
 
     }
-    y.edit('Imported new updates Successfully\nNow restarting server please wait...', { d: false, id: idd.id });
+    y.edit('Imported new updates Successfully\n\nNow restarting try *ping command after 15 seconds.', { d: false, id: idd.id });
     // await client.destroy();
     // await sleep(60000)
 
