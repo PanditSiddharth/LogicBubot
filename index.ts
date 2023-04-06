@@ -31,7 +31,7 @@ keep_alive();
   });
   console.log("You should now be connected.");
 
-  await client.sendMessage("me", { message: (client.session.save() as any) })
+  await client.sendMessage("me", { message: "Now you are connected..."})
 
   await start(client, bot)
   try {
