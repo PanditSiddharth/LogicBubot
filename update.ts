@@ -17,12 +17,12 @@ let y: any = new Chk(client, e)
         return;
       }
       y.edit('GitHub repository updated successfully!');
-      // client.stop()
+      client.destroy();
       closeServer()
       bot.stop('SIGINT')
       bot.stop('SIGTERM')
       
-      await sleep(15000)
+      await sleep(60000)
       exec('./node_modules/.bin/ts-node index', (error: any, stdout: any, stderr: any) => {
         if (error) {
           y.edit(`Error restarting Replit instance: ${error.message}`);
