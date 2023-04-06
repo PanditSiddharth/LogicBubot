@@ -32,7 +32,7 @@ let y: any = new Chk(client, e)
           y.edit(`Error restarting Replit instance: ${stderr}`);
           return;
         }
-        y.edit('Replit instance restarted successfully!');
+        y.edit('Replit instance restarted successfully! yo yo');
       });
     });
 }
