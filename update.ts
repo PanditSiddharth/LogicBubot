@@ -27,7 +27,7 @@ let y: any = new Chk(client, e)
           return y.edit(`Error restarting Replit instance: ${r.message}`, {id: idd.id});
         
         if (st) 
-          return y.edit(`Error restarting Replit instance: ${st}`, {idd.id});
+          return y.edit(`Error restarting Replit instance: ${st}`, {id: idd.id});
         
         y.edit('Successfully updated: Restarted bot', {id: idd.id});
       })
