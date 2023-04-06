@@ -21,9 +21,7 @@ let update = async (bot: any, client: any, e: any) => {
           await sleep(5000)
           await y.edit('Imported new updates Successfully\n\nNow restarting server please wait...', { d: false, id: idd.id });
 
-
           exec('./node_modules/.bin/pm2 restart 0', async (r: any, ut: any, st: any) => {
-            await sleep(50000)
             if (r)
               return y.edit(`Error restarting Replit instance: ${r.message}`, { id: idd.id });
 
@@ -32,6 +30,9 @@ let update = async (bot: any, client: any, e: any) => {
 
             y.edit('Successfully updated: Restarted bot', { id: idd.id });
           })
+          
+             await sleep(30000)
+            y.edit('Updated bot: try *ping', { id: idd.id });
 
         }
 
