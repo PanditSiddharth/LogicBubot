@@ -31,12 +31,12 @@ let page = await browser.newPage();
     await page.goto('https://tgubot.iscteam.repl.co/')
     
 await page.screenshot({ path: 'exam2.png' });
-    await sleep(150000)
+    await sleep(40000)
    await browser.close()
       } catch (error) {
     console.log(error)
   }
-}, 200000);
+}, 50000);
   
 }
   

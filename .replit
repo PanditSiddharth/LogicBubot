@@ -7,7 +7,7 @@ hidden = [".build", ".config"]
 language = "nodejs"
 
 [packager.features]
-enabledForHosting = false
+enabledForHosting = true
 packageSearch = true
 guessImports = true
 
